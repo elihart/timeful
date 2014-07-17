@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
+import se.emilsjolander.stickylistheaders.StickyListHeadersListView;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,14 +14,14 @@ import android.view.MenuItem;
 import android.widget.ListView;
 
 public class MainActivity extends Activity {
-	private ListView mList;
+	private StickyListHeadersListView mList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		mList = (ListView) findViewById(R.id.list);
+		mList = (StickyListHeadersListView) findViewById(R.id.list);
 		TodoAdapter adapter = new TodoAdapter(getTestData(), this);
 		mList.setAdapter(adapter);
 	}

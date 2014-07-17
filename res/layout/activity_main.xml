@@ -6,10 +6,9 @@
     tools:context="com.example.timeful.MainActivity"
     tools:ignore="MergeRootFrame" >
 
-    <ListView
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ListView>
+        android:layout_height="wrap_content" />
 
 </FrameLayout>
